@@ -28,5 +28,6 @@ cat id_rsa.pub
 
 7.打开项目文件夹，使用git命令窗口，执行以下代码复制刚刚创建的仓库到本地
 $ git clone https://github.com/zhaohuihuizoe/test.git
+dsds
 
 
