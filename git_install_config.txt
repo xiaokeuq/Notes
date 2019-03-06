@@ -1,0 +1,25 @@
+1.git 安装
+
+   sudo apt-get install git
+
+2.配置本机git的两个重要信息，user.name和user.email
+
+ git config --global user.name "Your Name"
+
+ git config --global user.email "email@example.com"
+
+然后我们可通过命令 git config --list,查看是否设置成功
+
+3. 查看home目录下是否有.ssh目录或者home目录下的ubuntu目录下是否有 .ssh目录，如果没有的话需要下面命令来生成git的ssh key
+
+ssh-keygen -C '1125585702@qq.com' -t rsa
+
+4.在github上面要添加 .ssh的公钥
+
+cd /home/ubuntu/.ssh 　　　　　　　　　　　　//如果没有找到.ssh 可以尝试在 /root/.ssh/下面找到 id_rsa.pub
+
+cat id_rsa.pub
+
+然后将这个文件中的内容添加到github上的添加公钥的地方即可
+
+5. 输入如下命令测试连接   ssh -T git@github.com
