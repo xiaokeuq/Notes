@@ -23,3 +23,10 @@ cat id_rsa.pub
 然后将这个文件中的内容添加到github上的添加公钥的地方即可
 
 5. 输入如下命令测试连接   ssh -T git@github.com
+
+6.github新建Repository, 更改Settings里GitGub Pages的source为master branch选项可以获取项目静态地址，可以发布静态页面。
+
+7.打开项目文件夹，使用git命令窗口，执行以下代码复制刚刚创建的仓库到本地
+$ git clone https://github.com/zhaohuihuizoe/test.git
+
+
